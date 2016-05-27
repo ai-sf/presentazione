@@ -2,7 +2,7 @@
 \documentclass{Bredelebeamer}
 \usepackage{anyfontsize}
 \usepackage{hyperref}
-
+\usepackage{longtable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -15,29 +15,38 @@
 % Sottotitolo opzionale
 
 \author{Marco Morrone \inst{}}
-% La commande \inst{...} Permet d'afficher l' affiliation de l'intervenant.
-% Si il y a plusieurs intervenants: Marcel Dupont\inst{1}, Roger Durand\inst{2}
-% Il suffit alors d'ajouter un autre institut sur le modèle ci-dessous.
+% Il comando \inst{} permette di inserire l'affiliazione di chi espone
+% Se ci sono più espositori basta inserire due comandi es: Mario Rossi\inst{1}, Paulo Dybala\inst{2}
+% Basta quindi aggiungere un nuovo istituto del tipo di quello qui sotto
 
 \institute[Ass. Italiana Studenti di Fisica]
+%Codice dell'istituto che verrà messo a piè di pagina
 {
   \inst{}%
  {\footnotesize Event Coordinator \\ \textit{ marco.morrone@ai-sf.it}}
   }
 
 \date{17 maggio 2016}
-% Optionnel. La date, généralement celle du jour de la conférence
+% Data opzionale, generalmente è da inserire la data della conferenza
 
 \subject{Presentazione AISF}
-% C'est utilisé dans les métadonnes du PDF
+% Nota centrale a pie di pagina
 
 
 
 \logo{
 \includegraphics[scale=0.6]{images/aisf.png}
 }
+%inserimento del logo in basso a destra in ogni slide
 
 
+%NOTE BREVI%
+%Serve la classe bradelebeamer.cls nella cartella del .tex per compilarlo; in più è possibile settare colori/ altri parametri) % 
+%per inserire il blocco rosa usare semplicemente il codice \begin{block}...\end{block} al cui interno è possibile creare colonne, inserire immagini, inserire tabelle etc.
+%Si consiglia l'utilizzo per le tabelle di \begin{longtable} usando top rule - mid rule e bottom rule, senza linee divisorie tra le colonne
+%Si consiglia l'utilizzo dei colori pre impostati perché colori "linee guida AISF".
+%Si ricorda la regola aurea di 1 slide al minuto, per evitare presentazioni troppo statiche e pesanti
+%per dubbi, proposte, etc scrivere a marco.morrone@ai-sf.it
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
